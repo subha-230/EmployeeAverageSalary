@@ -12,3 +12,13 @@ with open('report.txt', 'w') as f:
     for i, j in region_jobTitleName_Salary.iterrows():
         f.write("In '"+j['region']+"' region the avarage salary of a '"+j['jobTitleName']+"' is "+"{:,}".format(round(j['salary'])))
         f.write('\n')
+
+        
+#Output:
+#In 'CA' region the avarage salary of a 'Developer' is 25,000
+#In 'CA' region the avarage salary of a 'ProductOwner' is 2,000
+#In 'CA' region the avarage salary of a 'Program Directory' is 15,000
+#In 'FA' region the avarage salary of a 'Developer' is 10,000
+#In 'SA' region the avarage salary of a 'ProductOwner' is 31,667
+#In 'YA' region the avarage salary of a 'Developer' is 20,000
+#In 'YA' region the avarage salary of a 'ProductOwner' is 17,000
